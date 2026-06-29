@@ -1,0 +1,36 @@
+============================================================
+TARGET : 172.27.92.79
+============================================================
+
+[OPEN SERVICES]
+
+22/tcp   open  ssh      OpenSSH 10.0p2 Debian 7+deb13u1 (protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.66 ((Debian))
+443/tcp  open  ssl/http Apache httpd 2.4.66 ((Debian))
+3000/tcp open  ppp?
+
+[WEB FINDINGS]
+
+========== WHATWEB ==========
+http://172.27.92.79:80 [200 OK] Apache[2.4.66], Country[RESERVED][ZZ], HTTPServer[Debian Linux][Apache/2.4.66 (Debian)], IP[172.27.92.79], Title[Apache2 Debian Default Page: It works]
+
+
+========== NUCLEI ==========
+No findings.
+
+
+========== WHATWEB ==========
+https://172.27.92.79:443 [200 OK] Apache[2.4.66], Country[RESERVED][ZZ], HTTPServer[Debian Linux][Apache/2.4.66 (Debian)], IP[172.27.92.79], Title[Apache2 Debian Default Page: It works]
+
+
+========== NUCLEI ==========
+No findings.
+
+
+========== WHATWEB ==========
+http://172.27.92.79:3000 [200 OK] Country[RESERVED][ZZ], HTML5, IP[172.27.92.79], JQuery[2.2.4], Script[module], Title[OWASP Juice Shop], UncommonHeaders[access-control-allow-origin,x-content-type-options,feature-policy,x-recruiting], X-Frame-Options[SAMEORIGIN]
+
+
+========== NUCLEI ==========
+No findings.
+

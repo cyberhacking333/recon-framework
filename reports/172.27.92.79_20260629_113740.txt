@@ -1,0 +1,10 @@
+============================================================
+TARGET : 172.27.92.79
+============================================================
+
+[OPEN SERVICES]
+
+22/tcp   open  ssh      OpenSSH 10.0p2 Debian 7+deb13u1 (protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.66 ((Debian))
+443/tcp  open  ssl/http Apache httpd 2.4.66 ((Debian))
+3000/tcp open  ppp?

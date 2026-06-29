@@ -1,0 +1,26 @@
+============================================================
+TARGET : 172.27.92.79
+============================================================
+
+[OPEN SERVICES]
+
+22/tcp   open  ssh      OpenSSH 10.0p2 Debian 7+deb13u1 (protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.66 ((Debian))
+443/tcp  open  ssl/http Apache httpd 2.4.66 ((Debian))
+3000/tcp open  ppp?
+
+[WEB FINDINGS]
+
+========== WHATWEB ==========
+[1m[34mhttp://172.27.92.79:80[0m [200 OK] [1mApache[0m[[1m[32m2.4.66[0m], [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[31mDebian Linux[0m][[1m[36mApache/2.4.66 (Debian)[0m], [1mIP[0m[[0m[22m172.27.92.79[0m], [1mTitle[0m[[1m[33mApache2 Debian Default Page: It works[0m]
+
+
+========== NUCLEI ==========
+
+
+========== WHATWEB ==========
+[1m[34mhttps://172.27.92.79:443[0m [200 OK] [1mApache[0m[[1m[32m2.4.66[0m], [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[31mDebian Linux[0m][[1m[36mApache/2.4.66 (Debian)[0m], [1mIP[0m[[0m[22m172.27.92.79[0m], [1mTitle[0m[[1m[33mApache2 Debian Default Page: It works[0m]
+
+
+========== NUCLEI ==========
+

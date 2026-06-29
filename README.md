@@ -219,3 +219,4 @@ This framework is intended for **authorized security testing, educational purpos
 
 ## License
 
+This project is licensed under the MIT License. See the `LICENSE` file for details.
